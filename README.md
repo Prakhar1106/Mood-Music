@@ -1,5 +1,9 @@
-# emotion-based-music-ai
+# Mood Music
 
-just clone this repo or download
+Tech Stack: HTML, CSS, Bootstrap, Django, Machine Learning
 
-and run app.py 
+# Developers
+Prakhar Gupta
+Aparna Singh
+Yash Dhawan
+Priti Kumari
