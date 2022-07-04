@@ -1,0 +1,189 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+.wrapper{
+	display: block;
+	position: relative;
+	top:0;
+	/* height: 30vw; */
+}
+.wrapper::after{
+	
+	content: "";
+	background-image: url('background.jpg') ;
+
+	opacity: 0.4;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;   
+}
+h1{
+	font-family: 'Roboto Slab', serif;
+	color: #35bfff;
+	font-weight: bold;
+	opacity: 0.7;
+	text-shadow: 5px 2px #8b198b;
+}
+.title{
+	margin: 1%;
+}
+.container{
+	/* background-color: #ffa3bb; */
+	margin: 0%;
+	padding: 0%;
+}
+/* input[type="radio"]{
+	display: none;
+} */
+/* .box{
+	background-color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2rem;
+	padding: 1% 2%;
+	text-align:center;
+	font-family: sans-serif;
+	margin: 2% 1%;
+	border: 2px solid #52734d;
+	border-radius: 10%;
+	cursor: pointer;
+} */
+
+
+.col{
+	text-align: center;
+	padding: 2%;
+}
+/* .box:hover{
+	background-color: #91c788;
+	transition-duration: 1s;
+} */
+
+/* input[type=radio]:checked + .box{
+	background-color: #52734d;
+	color: white;
+	transition-duration: 1s;
+} */
+
+input[type=text]{
+	padding: 3%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.col h1{
+	color: #ffecff;
+	opacity: 1;
+	text-shadow: 3px 2px #8b198b;
+}
+.btn, .btn-warning{
+	font-size: 1.5rem;
+	color: white;
+	margin-bottom: 4%;
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+	padding: 2%;
+	width: 100%;
+	margin-top: 4.5%;
+	font-size: 1.2rem;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+.developers{
+	margin: 1%;
+	background-color: black;
+}
+.developers span{
+	padding: 1%;
+	margin: 1%;
+	color: white;
+}
+
+/*---------*/
+
+/* .l-radio{
+	margin: 5% 0;
+	cursor: pointer;
+	
+	/* -webkit-tap-highlight-color: transparent; */
+ 
+
+  
+	input[type=radio]{
+		display: none;
+	}	
+	.l-radio{
+		padding: 5% 40%;
+		color: rgb(110, 71, 219);
+		background-color: rgb(255, 255, 255);
+		border-radius: 50px; 
+		cursor: pointer;
+	}
+    .la{
+		font-size: 1.2rem;
+		font-family: 'Roboto Slab', serif;
+		margin: 3% 0 0 5%;
+		padding: 0%;
+		width: 8%;
+		cursor: pointer;
+		position: relative;
+		left: -2.5%;
+	}
+	/* .la:hover{
+		background-color: rgb(189, 216, 71);
+		color: rgb(255, 255, 255);
+	} */
+    input[type=radio]:checked + .l-radio{
+		color: white;
+		transition: .5s;
+		background-color: rgb(189, 216, 71);
+	}
+	
+    
+  /* .l-radio span{
+	vertical-align: middle;
+    display: inline-block;
+    line-height: 20px;
+    padding: 3%;
+  }
+     */
+
+
+.mood{
+	text-align: center;
+	position: absolute;
+	top: 15%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.mood h1{
+	font-size: 3rem;
+	color: #edb529;
+	text-shadow: none;
+	font-weight: 700;
+	margin: 2%;
+}
+.mood img{
+	width: 20%;
+}
+
+.mood .but{
+	display: block;
+	margin: 3%;
+	text-align: center;
+}
+.mood .but button{
+	padding: 1% 2%;
+	font-size: 1.2rem;
+}
