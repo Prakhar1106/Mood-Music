@@ -12,6 +12,7 @@ info = {}
 
 haarcascade = "haarcascade_frontalface_default.xml"
 label_map = ['Anger', 'Neutral', 'Fear', 'Happy', 'Sad', 'Surprise']
+label_map_trans = ['Motivational', '', 'Calm', 'Happy', 'Joyful', 'Rock']
 print("+"*50, "loadin gmmodel")
 model = load_model('model.h5')
 cascade = cv2.CascadeClassifier(haarcascade)
@@ -57,14 +58,15 @@ def emotion_detect():
 	print(prediction)
 
 	prediction = np.argmax(prediction)
-	prediction = label_map[prediction]
+	prediction1 = label_map_trans[prediction]
+	prediction2 = label_map[prediction]
 
 	cap.release()
 
-	link  = f"https://www.youtube.com/results?search_query={info['singer']}+{prediction}+{info['language']}+song"
-	webbrowser.open(link)
+	link  = f"https://www.youtube.com/results?search_query={info['singer']}+{prediction1}+{info['language']}+song"
+	# webbrowser.open(link)
 
-	return render_template("emotion_detect.html", data=prediction, link=link)
+	return render_template("emotion_detect.html", data=prediction2, link=link)
 
 if __name__ == "__main__":
 	app.run(debug=True)
