@@ -9,6 +9,10 @@ html, body{
 	top:0;
 	/* height: 30vw; */
 }
+.alert{
+	z-index: 10 !important;
+	position: absolute;
+}
 .wrapper::after{
 	
 	content: "";
@@ -37,37 +41,11 @@ h1{
 	margin: 0%;
 	padding: 0%;
 }
-/* input[type="radio"]{
-	display: none;
-} */
-/* .box{
-	background-color: #ffffff;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 1.2rem;
-	padding: 1% 2%;
-	text-align:center;
-	font-family: sans-serif;
-	margin: 2% 1%;
-	border: 2px solid #52734d;
-	border-radius: 10%;
-	cursor: pointer;
-} */
-
 
 .col{
 	text-align: center;
 	padding: 2%;
 }
-/* .box:hover{
-	background-color: #91c788;
-	transition-duration: 1s;
-} */
-
-/* input[type=radio]:checked + .box{
-	background-color: #52734d;
-	color: white;
-	transition-duration: 1s;
-} */
 
 input[type=text]{
 	padding: 3%;
@@ -107,16 +85,6 @@ footer{
 	margin: 1%;
 	color: white;
 }
-
-/*---------*/
-
-/* .l-radio{
-	margin: 5% 0;
-	cursor: pointer;
-	
-	/* -webkit-tap-highlight-color: transparent; */
- 
-
   
 	input[type=radio]{
 		display: none;
@@ -138,24 +106,13 @@ footer{
 		position: relative;
 		left: -2.5%;
 	}
-	/* .la:hover{
-		background-color: rgb(189, 216, 71);
-		color: rgb(255, 255, 255);
-	} */
+	
     input[type=radio]:checked + .l-radio{
 		color: white;
 		transition: .5s;
 		background-color: rgb(189, 216, 71);
 	}
 	
-    
-  /* .l-radio span{
-	vertical-align: middle;
-    display: inline-block;
-    line-height: 20px;
-    padding: 3%;
-  }
-     */
 
 
 .mood{

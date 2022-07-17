@@ -41,7 +41,12 @@ def emotion_detect():
 		gray = cv2.cvtColor(frm,cv2.COLOR_BGR2GRAY)
 
 		faces = cascade.detectMultiScale(gray, 1.4, 1)
-
+		
+		if faces is ():
+			print("not detect")
+			msg = "Face not detected, Try Again!!!"
+			return render_template("index.html", err=msg)
+		
 		for x,y,w,h in faces:
 			found = True
 			roi = gray[y:y+h, x:x+w]
